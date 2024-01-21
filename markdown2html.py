@@ -8,6 +8,7 @@ import markdown
 
 
 def convert_markdown_to_html(input_file, output_file):
+    """A functions that converts markdown file to html"""
     try:
         with open(input_file, 'r', encoding='utf-8') as md_file:
             markdown_text = md_file.read()
@@ -24,7 +25,7 @@ def convert_markdown_to_html(input_file, output_file):
 
 
 if __name__ == "__main__":
-    # Check the number of arguments
+    """ Check the number of arguments"""
     if len(sys.argv) < 3:
         print("Usage: ./markdown2html.py <input_file> <output_file>",
               file=sys.stderr)
@@ -33,11 +34,11 @@ if __name__ == "__main__":
     input_file = sys.argv[1]
     output_file = sys.argv[2]
 
-    # Check if the input file exists
+    """ Check if the input file exists"""
     if not os.path.exists(input_file):
         print(f"Missing {input_file}", file=sys.stderr)
         sys.exit(1)
 
-    # Convert Markdown to HTML
+    """Convert Markdown to HTML"""
     exit_code = convert_markdown_to_html(input_file, output_file)
     sys.exit(exit_code)
