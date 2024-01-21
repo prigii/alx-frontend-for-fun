@@ -20,10 +20,12 @@ def convert_markdown_to_html(input_file, output_file):
         print(f"Missing {input_file}", file=sys.stderr)
         return 1
 
+
 if __name__ == "__main__":
     # Check the number of arguments
     if len(sys.argv) < 3:
-        print("Usage: ./markdown2html.py <input_file> <output_file>", file=sys.stderr)
+        print("Usage: ./markdown2html.py <input_file> <output_file>", 
+            file=sys.stderr)
         sys.exit(1)
 
     input_file = sys.argv[1]
@@ -37,4 +39,3 @@ if __name__ == "__main__":
     # Convert Markdown to HTML
     exit_code = convert_markdown_to_html(input_file, output_file)
     sys.exit(exit_code)
-
