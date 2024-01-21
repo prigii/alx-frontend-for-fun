@@ -24,8 +24,8 @@ def convert_markdown_to_html(input_file, output_file):
 if __name__ == "__main__":
     # Check the number of arguments
     if len(sys.argv) < 3:
-        print("Usage: ./markdown2html.py <input_file> <output_file>", 
-            file=sys.stderr)
+        print("Usage: ./markdown2html.py <input_file> <output_file>",
+              file=sys.stderr)
         sys.exit(1)
 
     input_file = sys.argv[1]
