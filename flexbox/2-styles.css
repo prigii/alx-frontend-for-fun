@@ -387,6 +387,10 @@
   .section-latest-news {
 
   }
+  /* Section Latest news ============================= */
+  .section-latest-news .row {
+    flex-direction: row-reverse;
+  }
 
 
 
