@@ -384,21 +384,6 @@
     background-color: #010101;
   }
 
-  .section-services {
-    
-  }
-
-  .section-works {
-
-  }
-  
-  .section-about-us {
-
-  }
-
-  .section-latest-news {
-
-  }
   /* Section Latest news ============================= */
   .section-latest-news .row {
     flex-direction: row-reverse;
