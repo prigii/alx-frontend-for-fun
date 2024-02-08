@@ -713,7 +713,7 @@
         margin: 0;
         background-color: var(--color-white);
     }
-    .form-group::focus-within {
+    .form-group:focus-within {
         background-color: var(--color-light-grey);
         transition: .3s;
     }
@@ -737,7 +737,7 @@
         transition: .3s;
         overflow: hidden;
     }
-    .form-group::focus-within .form-help {
+    .form-group:focus-within .form-help {
         max-height: 20rem;
         margin: .4rem 0 0;
     }
