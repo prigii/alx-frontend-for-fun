@@ -1,5 +1,5 @@
-// Define the list to be sorted
+/* Sorts the variable $list_to_sort and prints the sorted list in the debug output */
+
 @import '103-sort_list';
 
-// Sort the list and print it in the debug output
 @debug $list_to_sort;
