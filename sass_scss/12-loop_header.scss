@@ -1,0 +1,10 @@
+// Define the maximum number of heading levels
+$max-level: 5;
+
+// Use @for to generate h* tags from 1 to 5
+@for $i from 1 through $max-level {
+  // Define the font size for each heading level
+  h#{$i} {
+    font-size: #{$i}px;
+  }
+}
