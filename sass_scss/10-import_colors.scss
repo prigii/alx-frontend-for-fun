@@ -1,0 +1,15 @@
+// Import the 10-colors.scss file
+@import '10-colors';
+
+// Apply the colors to respective classes
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
