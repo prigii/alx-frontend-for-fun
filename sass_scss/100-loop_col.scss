@@ -1,13 +1,7 @@
-// Define the maximum number of columns
-$max-cols: 4;
-
 // Use @for to generate .col-* classes from 1 to 4
-@for $i from 1 through $max-cols {
-  // Calculate the width for each column
-  $width: 100% / $i;
-
-  // Generate .col-* classes with different widths
-  .col-#{$i} {
-    width: $width;
+@for $i from 1 through 4 {
+ 
+   .col-#{$i} {
+    width: 100% / $i;
   }
 }
