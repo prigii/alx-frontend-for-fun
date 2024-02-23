@@ -1,0 +1,39 @@
+// Base font size for h1 tags
+$h1-font-size: 20px;
+
+// Font size for h1 tags when screen width is smaller than 960px
+$h1-font-size-medium: 18px;
+
+// Font size for h1 tags when screen width is smaller than 640px
+$h1-font-size-small: 16px;
+
+// Font size for h1 tags when screen width is smaller than 320px
+$h1-font-size-xsmall: 14px;
+
+// Text color for h1.small tags when screen width is smaller than 320px
+$h1-small-text-color: #1D1D1D;
+
+// Base styles for h1 tags
+h1 {
+  font-size: $h1-font-size;
+
+  // Media query for screen width smaller than 960px
+  @media screen and (max-width: 960px) {
+    font-size: $h1-font-size-medium;
+  }
+
+  // Media query for screen width smaller than 640px
+  @media screen and (max-width: 640px) {
+    font-size: $h1-font-size-small;
+  }
+
+  // Media query for screen width smaller than 320px
+  @media screen and (max-width: 320px) {
+    font-size: $h1-font-size-xsmall;
+
+    // Styles for h1.small tags
+    &.small {
+      color: $h1-small-text-color;
+    }
+  }
+}
