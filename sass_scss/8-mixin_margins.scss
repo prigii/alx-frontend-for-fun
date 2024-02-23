@@ -1,0 +1,16 @@
+// Define a mixin for setting left and right margin
+@mixin lr-margin($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+  }
+  
+  // Apply the mixin to body tags
+  body {
+    @include lr-margin(10px, 10px);
+  }
+  
+  // Apply the mixin to div tags
+  div {
+    @include lr-margin(15px, 15px);
+  }
+  
