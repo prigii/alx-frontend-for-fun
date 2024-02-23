@@ -1,0 +1,17 @@
+// Define common style for tags of class .info
+.info {
+    font-size: 12px;
+  }
+  
+  // Apply specific styles for tags of class .success
+  .success {
+    @extend .info;
+    color: #00FF00;
+  }
+  
+  // Apply specific styles for tags of class .warning
+  .warning {
+    @extend .info;
+    color: #FF0000;
+  }
+  
